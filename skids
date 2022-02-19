@@ -1,0 +1,46 @@
+skids = {
+    "dollhouzze25",
+    "SynapseScripterr",
+    "KimberlyWolf7777",
+    "waffleIoc",
+    "hhhhhjsksksj",
+    "Oliviadixon90",
+    "dollhouzze45",
+    "danisyar",
+    "Emerald_Claw",
+    "man_shadow133",
+    "jw22300",
+    "gesillia",
+    "ghajuneinzuma",
+    "ivofus",
+    "noobliawaltaccount",
+    "Diner2310",
+    "EZI989i",
+    "Kylxnm_Gaming",
+    "mincraftman55559"
+}
+
+for _,v in pairs(skids) do
+    skids[v] = true
+end
+
+game.Players.PlayerAdded:Connect(function(AddedPlayer)
+    if skids[AddedPlayer.Name] then
+            game.StarterGui:SetCore("ChatMakeSystemMessage", {
+            Text = "!!! ATTENTION !!! A KNOWN SKID HAS JOINED YOUR SERVER!! SKID: "..AddedPlayer.Name;
+            Font = Enum.Font.GothamBlack;   
+            Color =Color3.fromRGB(255, 0, 0);      
+           FontSize = 25                     
+        })
+    end
+end)
+for _,v in pairs(game.Players:GetPlayers()) do
+    if skids[v.Name] then
+            game.StarterGui:SetCore("ChatMakeSystemMessage", {
+            Text = "!!! ATTENTION !!! A KNOWN SKID IS IN YOUR SERVER!! SKID: "..v.Name;
+            Font = Enum.Font.GothamBlack;   
+            Color =Color3.fromRGB(255, 0, 0);      
+           FontSize = 25                     
+        })
+    end
+end
