@@ -1,3 +1,10 @@
+game.StarterGui:SetCore("ChatMakeSystemMessage", {
+    Text = "skidnotify active";
+    Font = Enum.Font.GothamBlack;   
+    Color =Color3.fromRGB(150, 112, 159);      
+    FontSize = 25                     
+})
+
 skids = {
     "dollhouzze25",
     "SynapseScripterr",
