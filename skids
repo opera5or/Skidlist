@@ -26,7 +26,8 @@ skids = {
     "Kylxnm_Gaming",
     "mincraftman55559",
     "bilalhungrey1",
-    "supertyler140"
+    "supertyler140",
+    "Smooty8901"
 }
 
 for _,v in pairs(skids) do
