@@ -49,8 +49,8 @@ for _,v in pairs(skids) do
     skids[v] = true
 end
 
-game.Players.PlayerAdded:Connect(function(AddedPlayer)
-    if skids[AddedPlayer.Name] then
+game.Players.PlayerAdded:Connect(function(addplr)
+    if skids[addplr.Name] then
             game.StarterGui:SetCore("ChatMakeSystemMessage", {
             Text = "!!! ATTENTION !!! A KNOWN SKID HAS JOINED YOUR SERVER!! SKID: "..AddedPlayer.Name;
             Font = Enum.Font.GothamBlack;   
