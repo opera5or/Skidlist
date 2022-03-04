@@ -1,7 +1,7 @@
 game.StarterGui:SetCore("ChatMakeSystemMessage", {
     Text = "skidnotify active";
     Font = Enum.Font.GothamBlack;   
-    Color =Color3.fromRGB(150, 112, 159);      
+    Color =Color3.fromRGB(180, 128, 255);      
     FontSize = 25                     
 })
 
